@@ -1,0 +1,166 @@
+{
+    "drug_rules": [
+        {
+            "drug_name": "Aspirin",
+            "aliases": [
+                "acetylsalicylic acid",
+                "asa"
+            ],
+            "contraindicated_allergies": [
+                "aspirin",
+                "nsaids",
+                "ibuprofen"
+            ],
+            "contraindicated_conditions": [
+                "active bleeding",
+                "hemorrhagic stroke",
+                "peptic ulcer disease",
+                "bleeding disorder",
+                "hemophilia",
+                "samters triad"
+            ],
+            "interacting_drugs": [
+                "warfarin",
+                "heparin",
+                "clopidogrel",
+                "ibuprofen"
+            ],
+            "severity": "HIGH",
+            "warning_message": "Aspirin is strictly contraindicated in patients with active bleeding, bleeding disorders, or known NSAID hypersensitivity.",
+            "safe_alternatives": [
+                "Paracetamol / Acetaminophen (for pain/fever)"
+            ]
+        },
+        {
+            "drug_name": "Epinephrine",
+            "aliases": [
+                "adrenaline"
+            ],
+            "contraindicated_allergies": [],
+            "contraindicated_conditions": [],
+            "interacting_drugs": [
+                "propranolol",
+                "atenolol",
+                "metoprolol",
+                "beta blockers"
+            ],
+            "severity": "MEDIUM",
+            "warning_message": "Concomitant use with non-selective beta-blockers may blunt epinephrine response or cause severe hypertension/bradycardia. However, in life-threatening anaphylaxis, Epinephrine remains mandatory.",
+            "safe_alternatives": [
+                "Glucagon (if refractory anaphylaxis on beta-blockers)"
+            ]
+        },
+        {
+            "drug_name": "Nitroglycerin",
+            "aliases": [
+                "nitro",
+                "glyceryl trinitrate"
+            ],
+            "contraindicated_allergies": [
+                "nitrates"
+            ],
+            "contraindicated_conditions": [
+                "hypotension",
+                "severe bradycardia",
+                "right ventricular infarction",
+                "systolic bp < 90"
+            ],
+            "interacting_drugs": [
+                "sildenafil",
+                "tadalafil",
+                "vardenafil",
+                "pde5 inhibitors"
+            ],
+            "severity": "CRITICAL",
+            "warning_message": "CRITICAL CONTRAINDICATION: Nitroglycerin combined with PDE-5 inhibitors (e.g. Sildenafil, Tadalafil) causes severe refractory hypotension and fatal shock.",
+            "safe_alternatives": [
+                "Morphine / Oxygen / Aspirin protocol for ischemia (with BP monitoring)"
+            ]
+        },
+        {
+            "drug_name": "Amoxicillin",
+            "aliases": [
+                "amoxil",
+                "penicillin",
+                "ampicillin"
+            ],
+            "contraindicated_allergies": [
+                "penicillin",
+                "amoxicillin",
+                "ampicillin",
+                "beta-lactams"
+            ],
+            "contraindicated_conditions": [],
+            "interacting_drugs": [
+                "methotrexate",
+                "allopurinol"
+            ],
+            "severity": "HIGH",
+            "warning_message": "Severe anaphylaxis risk in patients with documented Penicillin/Beta-lactam allergy.",
+            "safe_alternatives": [
+                "Azithromycin",
+                "Clarithromycin",
+                "Doxycycline",
+                "Ciprofloxacin"
+            ]
+        },
+        {
+            "drug_name": "Ibuprofen",
+            "aliases": [
+                "advil",
+                "motrin",
+                "nurofen"
+            ],
+            "contraindicated_allergies": [
+                "ibuprofen",
+                "aspirin",
+                "nsaids"
+            ],
+            "contraindicated_conditions": [
+                "renal impairment",
+                "active peptic ulcer",
+                "third trimester pregnancy",
+                "severe heart failure"
+            ],
+            "interacting_drugs": [
+                "aspirin",
+                "warfarin",
+                "lisinopril"
+            ],
+            "severity": "HIGH",
+            "warning_message": "NSAIDs exacerbate peptic ulcers, renal failure, and impair aspirin anti-platelet efficacy.",
+            "safe_alternatives": [
+                "Paracetamol / Acetaminophen"
+            ]
+        },
+        {
+            "drug_name": "Morphine",
+            "aliases": [
+                "morphine sulfate",
+                "ms contin"
+            ],
+            "contraindicated_allergies": [
+                "morphine",
+                "opioids"
+            ],
+            "contraindicated_conditions": [
+                "severe respiratory depression",
+                "acute asthma",
+                "head injury with elevated ICP"
+            ],
+            "interacting_drugs": [
+                "diazepam",
+                "lorazepam",
+                "alcohol",
+                "sedatives"
+            ],
+            "severity": "HIGH",
+            "warning_message": "Opioids pose high respiratory depression risk, especially when combined with central nervous system depressants.",
+            "safe_alternatives": [
+                "Fentanyl (lower histamine release)",
+                "Paracetamol IV",
+                "Ketorolac"
+            ]
+        }
+    ]
+}
