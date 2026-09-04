@@ -5,9 +5,15 @@ the local Ollama LLM client to generate a structured medical assessment.
 """
 
 from typing import Dict, Any, List, Optional
-from backend.app.rag.vectorstore import TriageVectorStore
-from backend.app.rag.ingest import run_ingestion
-from backend.app.llm import OfflineLLMClient
+try:
+    from backend.app.rag.vectorstore import TriageVectorStore
+    from backend.app.rag.ingest import run_ingestion
+    from backend.app.llm import OfflineLLMClient
+except ImportError:
+    from app.rag.vectorstore import TriageVectorStore
+    from app.rag.ingest import run_ingestion
+    from app.llm import OfflineLLMClient
+
 
 class SymptomAnalyzerAgent:
     def __init__(self, vector_store: Optional[TriageVectorStore] = None, llm_client: Optional[OfflineLLMClient] = None):

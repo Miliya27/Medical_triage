@@ -10,10 +10,17 @@ from pydantic import BaseModel, Field
 from typing import List, Dict, Any, Optional
 import random
 
-from backend.app.agents.symptom_analyzer import SymptomAnalyzerAgent
-from backend.app.agents.drug_interaction import DrugInteractionAgent
-from backend.app.agents.escalation import EscalationAgent
-from backend.app.database import TriageDatabase
+try:
+    from backend.app.agents.symptom_analyzer import SymptomAnalyzerAgent
+    from backend.app.agents.drug_interaction import DrugInteractionAgent
+    from backend.app.agents.escalation import EscalationAgent
+    from backend.app.database import TriageDatabase
+except ImportError:
+    from app.agents.symptom_analyzer import SymptomAnalyzerAgent
+    from app.agents.drug_interaction import DrugInteractionAgent
+    from app.agents.escalation import EscalationAgent
+    from app.database import TriageDatabase
+
 
 app = FastAPI(
     title="Offline Multi-Agent Medical Triage API",

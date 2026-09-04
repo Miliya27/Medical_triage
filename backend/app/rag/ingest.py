@@ -6,7 +6,11 @@ Parses Markdown protocol files into structured chunks and populates the local ve
 import os
 import re
 from typing import List, Dict, Any
-from backend.app.rag.vectorstore import TriageVectorStore
+try:
+    from backend.app.rag.vectorstore import TriageVectorStore
+except ImportError:
+    from app.rag.vectorstore import TriageVectorStore
+
 
 PROTOCOLS_FILE = os.path.join(
     os.path.dirname(os.path.dirname(os.path.dirname(__file__))),
